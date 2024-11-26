@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="La Aventura de Jump: El Escape Espacial" />
+    <meta name="author" content="Tu Nombre" />
+    <title>La Aventura de Jump</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/10.jpg" />
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,600,700,800,900" rel="stylesheet" />
+    <!-- Core theme CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Varela Round', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .navbar {
+            background-color: #000000; /* Fondo negro */
+        }
+
+            .navbar .navbar-brand,
+            .navbar .nav-link {
+                color: #ffffff; /* Texto blanco */
+            }
+
+                .navbar .navbar-brand:hover,
+                .navbar .nav-link:hover {
+                    color: #00bfff; /* Color azul claro al pasar el ratón (opcional) */
+                }
+
+        .navbar-brand {
+            color: #00bfff !important;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .masthead {
+            background: url('assets/img/jum.jpg') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            height: 100vh;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+            .masthead h1 {
+                font-family: 'Orbitron', sans-serif;
+                font-size: 4rem;
+                letter-spacing: 2px;
+                color: #00bfff;
+                text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 15px rgba(0, 255, 255, 0.7);
+            }
+
+            .masthead h2 {
+                font-family: 'Roboto', sans-serif;
+                font-size: 2rem;
+                color: rgba(255, 255, 255, 0.8);
+                margin-top: 20px;
+                letter-spacing: 1px;
+            }
+
+            .masthead .btn-primary {
+                background-color: #00bfff;
+                border: none;
+                padding: 1rem 2rem;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                transition: all 0.3s ease;
+                border-radius: 5px;
+                box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+            }
+
+                .masthead .btn-primary:hover {
+                    background-color: #007acc;
+                    box-shadow: 0 0 30px rgba(0, 255, 255, 1);
+                }
+
+        section {
+            padding: 4rem 0;
+        }
+
+        #about, #items, #download {
+            background-color: #222;
+        }
+
+        #characters, #levels, #curiosities, #achievements, #gallery {
+            background-color: #f8f9fa;
+            color: #000;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            ul li {
+                margin-bottom: 1rem;
+                font-size: 1.2rem;
+            }
+
+        .btn-download {
+            background-color: #00bfff;
+            border: none;
+            padding: 1rem 2rem;
+            color: #fff;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            transition: transform 0.2s ease-in-out;
+        }
+
+            .btn-download:hover {
+                transform: scale(1.1);
+                background-color: #007acc;
+            }
+
+        footer {
+            padding: 2rem 0;
+        }
+
+        #gallery {
+            background-color: #222;
+            padding: 4rem 0;
+        }
+
+        .gallery-item img {
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+            .gallery-item img:hover {
+                transform: scale(1.05);
+            }
+
+        .gallery-item {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-color: #000000;">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top" style="color: #ffffff;">La Aventura de Jump</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                Menu <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about" style="color: #ffffff;">Historia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#characters" style="color: #ffffff;">Personajes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#items" style="color: #ffffff;">Ítems</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#levels" style="color: #ffffff;">Niveles</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#curiosities" style="color: #ffffff;">Curiosidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery" style="color: #ffffff;">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#download" style="color: #ffffff;">Descargar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead -->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="text-center">
+                <h1 class="text-uppercase">La Aventura de Jump</h1>
+                <h2 class="text-white-10">El Escape Espacial</h2>
+            
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Historia</h2>
+            <p class="text-white-50">
+                Un día cualquiera, Jump, un tranquilo tripulante azul, fue atrapado por una nave alienígena desconocida.
+                Ahora debe explorar una nave gigantesca llena de trampas y enemigos, buscando una nave oculta que lo lleve de regreso a casa.
+            </p>
+            <img class="img-fluid" src="assets/img/3.jpg" alt="La nave alienígena" />
+        </div>
+    </section>
+
+    <!-- Characters -->
+    <section id="characters">
+        <div class="container text-center">
+            <h2 class="mb-4">Personajes</h2>
+            <ul>
+                <li><strong>Jump:</strong> El protagonista, un valiente tripulante azul.</li>
+                <li><strong>Criaturas alienígenas:</strong> Enemigos hostiles que intentan evitar que Jump escape.</li>
+                <li><strong>Navegante alienígena:</strong> Un personaje misterioso de identidad incierta.</li>
+                <li><strong>Aliado X:</strong> Un robot amigable que te ayuda con pistas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Items -->
+    <section id="items">
+        <div class="container text-center">
+            <h2 class="text-white mb-4">Ítems del juego</h2>
+            <ul class="text-white-50">
+                <li>Un arma láser con efectos visuales brillantes.</li>
+                <li>Habilidades como doble salto, esquivar y supervelocidad.</li>
+                <li>Escudos energéticos para resistir ataques.</li>
+                <li>Mapa holográfico con rutas secretas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Levels -->
+    <section id="levels">
+        <div class="container text-center">
+            <h2 class="mb-4">Mapa del juego</h2>
+            <p>
+                En este juego de un nivel, Jump debe superar obstáculos, eliminar enemigos y enfrentarse al jefe final para completar su misión.
+            </p>
+            <div class="row">
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/1.jpg" alt="Inicio del juego" /></div>
+                <div class="col-lg-6"><img class="img-fluid" src="assets/img/4.jpg" alt="Enemigos y trampas" /></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curiosities -->
+    <section id="curiosities">
+        <div class="container text-center">
+            <h2 class="mb-4">Curiosidades</h2>
+            <ul>
+                <li>El diseño de Jump está inspirado en trajes espaciales reales.</li>
+                <li>El nivel del jefe final fue creado en solo 2 semanas.</li>
+                <li>La música está compuesta por un músico indie.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div class="container text-center">
+            <h2 class="mb-4 text-white">Galería de Imágenes</h2>
+            <div class="row">
+                <!-- Imagen 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img class="img-fluid" src="assets/img/3.jpg" alt="Imagen 1">
+                    </div>
+                </div>
+                <!-- Imagen 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img class="img-fluid" src="assets/img/7.jpg" alt="Imagen 2">
+                    </div>
+                </div>
+                <!-- Imagen 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img class="img-fluid" src="assets/img/1.jpg" alt="Imagen 3">
+                    </div>
+                </div>
+                <!-- Imagen 4 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img class="img-fluid" src="assets/img/4.jpg" alt="Imagen 4">
+                    </div>
+                </div>
+                <!-- Imagen 5 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img class="img-fluid" src="assets/img/5.jpg" alt="Imagen 5">
+                    </div>
+                </div>
+                <!-- Imagen 6 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="gallery-item">
+                        <img class="img-fluid" src="assets/img/6.jpg" alt="Imagen 6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download">
+        <div class="container text-center">
+            <h2 class="mb-4">¡Descarga ahora!</h2>
+            <a href="#" class="btn-download">Descargar el juego</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>© 2024 La Aventura de Jump. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
